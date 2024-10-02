@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Tic Tac Toe</h1>
+
+  <!-- Player names form -->
+  <div id="nameInput">
+    <input type="text" id="player1" placeholder="Enter Player 1 Name" required>
+    <input type="text" id="player2" placeholder="Enter Player 2 Name" required>
+    <p id="errorMessage" class="hidden">Both player names are required!</p>
+    <button id="startBtn">Start Game</button>
+  </div>
+
+  <!-- Current turn -->
+  <div id="turnIndicator" class="hidden">
+    <h2 id="turnText"></h2>
+  </div>
+
+  <!-- Game board -->
+  <div id="gameBoard" class="hidden">
+    <div class="row">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+    </div>
+    <div class="row">
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+    </div>
+    <div class="row">
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+  </div>
+
+  <!-- Winner message -->
+  <div id="winnerMessage" class="hidden">
+    <h2 id="winnerText"></h2>
+    <button id="resetBtn">Play Again</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
